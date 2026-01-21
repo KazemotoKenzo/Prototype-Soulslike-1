@@ -725,7 +725,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -794,6 +794,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entity: {fileID: 1872792162}
+  triggerAttack:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &428548184
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,9 +847,9 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Height: 2
@@ -915,6 +918,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entity: {fileID: 1872792162}
+  triggerAttack:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &731484678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,7 +1014,7 @@ GameObject:
   - component: {fileID: 835736408}
   - component: {fileID: 835736410}
   - component: {fileID: 835736407}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}

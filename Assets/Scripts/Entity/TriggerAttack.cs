@@ -12,10 +12,4 @@ public class TriggerAttack : MonoBehaviour
     {
       isAttacking = true;  
     }
-
-    void OnTriggerEnter(Collider other)
-    {
-      if(isAttacking && other.gameObject.TryGetComponent<Hitbox>(out Hitbox hitbox)) hitbox.takeDamage(damage);
-      Debug.Log(other);
-    }
 }
